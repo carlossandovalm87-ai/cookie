@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main class="game">
+        <h1>Cookie Clicker</h1>
+        <p class="score"><span id="score">0</span> galletas</p>
+        <button class="cookie" id="cookie-button" type="button" aria-label="Hornear una galleta">
+            <img src="img/galleta.png" alt="Galleta con chispas de chocolate">
+        </button>
+        <p>Por clic: <strong id="click-value">1</strong> · Clics: <strong id="clicks">0</strong></p>
+        <p class="message" id="message" role="status">Haz clic en la galleta para empezar.</p>
+
+        <section class="powers" aria-labelledby="powers-title">
+            <h2 id="powers-title">Potenciadores</h2>
+            <button id="upgrade-button" type="button">Mejorar clic gratis</button>
+            <button id="auto-button" type="button">Activar horno automático</button>
+            <p class="power-status" id="auto-status">Genera 1 galleta por segundo durante 10 segundos.</p>
+            <button id="boost-button" type="button">Activar doble clic</button>
+            <p class="power-status" id="boost-status">Duplica las galletas por clic durante 10 segundos.</p>
+        </section>
+    </main>
+</body>
+</html>
